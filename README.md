@@ -7,7 +7,7 @@ This is one way to migrate contents from a SharePoint Discussion Board list to Y
 - Decode the Yammer GroupId Base64
 
 ```
-$GroupId = 'eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNzY0NDcxNTAwOSJ9
+$GroupId = 'eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNzY0NDcxNTAwOSJ9'
 $decoded = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($GroupId))
 Write-Output $decoded
 ```
